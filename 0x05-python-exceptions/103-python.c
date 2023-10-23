@@ -32,7 +32,7 @@ void print_python_list(PyObject *p)
 
 	for (j = 0; j < size; j++)
 	{
-		type = list->ob_item[i]->ob_type->tp_name;
+		type = list->ob_item[j]->ob_type->tp_name;
 		printf("Element %ld: %s\n", j, type);
 		if (strcmp(type, "bytes") == 0)
 			print_python_bytes(list->ob_item[j]);
