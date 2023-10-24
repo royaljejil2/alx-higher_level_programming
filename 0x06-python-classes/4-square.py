@@ -18,8 +18,8 @@ class Square:
         """Property for the length of a side of this square.
 
         Raises:
-            TypeError: If size is not an integer
-            ValueError: If size is less than 0
+            TypeError: If size is not an integer.
+            ValueError: If size is less than 0.
         """
         return self.__size
 
